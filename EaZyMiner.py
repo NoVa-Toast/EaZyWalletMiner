@@ -90,7 +90,7 @@ def main():
 						address = doublehash_base58_checksum(b'\x00' + hash160(public_key))
 						balance = float(getbalance(address, s))
 						if (balance == 0):
-							count+=1.001
+							count+=1
 							sys.stdout.write(colorama.Fore.LIGHTBLUE_EX + "[LOLCAT]" + colorama.Fore.LIGHTWHITE_EX + " : ADDRESS " + str(address) + colorama.Fore.YELLOW + " : PRIVATE KEY " + str(wif) + colorama.Fore.GREEN + " : BALANCE " + str(balance)+"\n")
 						if (balance > 0):
 							valid+=1
