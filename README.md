@@ -1,2 +1,2 @@
 # EaZyWalletMiner
-An easy but fast and effective wallet miner
+Easy to Use Wallet miner, fast easy to use very effective
