@@ -11,7 +11,7 @@ from multiprocessing.pool import ThreadPool
 count=0
 valid=0
 os.system("cls")
-os.system("title LoLCAT Miner ^| Open Source ")
+os.system("title EazyMiner ^| Open Source ")
 while True:
 	print("Modes:")
 	print("\t1. Bech32 (New Wallet system)")
@@ -60,7 +60,7 @@ def main():
 						balance = float(jsond.loads(requests.get("http://51.12.89.227:8080/api/address/"+address).text)["txHistory"]["balanceSat"])
 						if (balance == 0):
 							count+=1
-							sys.stdout.write(colorama.Fore.LIGHTBLUE_EX + "[LOLCAT]" + colorama.Fore.LIGHTWHITE_EX + " : ADDRESS " + str(address) + colorama.Fore.YELLOW + " : PRIVATE KEY " + str(wif) + colorama.Fore.GREEN + " : BALANCE " + str(balance)+"\n")
+							sys.stdout.write(colorama.Fore.LIGHTBLUE_EX + "[EaZy]" + colorama.Fore.LIGHTWHITE_EX + " : ADDRESS " + str(address) + colorama.Fore.YELLOW + " : PRIVATE KEY " + str(wif) + colorama.Fore.GREEN + " : BALANCE " + str(balance)+"\n")
 						if (balance > 0):
 							valid+=1
 							count+=1
